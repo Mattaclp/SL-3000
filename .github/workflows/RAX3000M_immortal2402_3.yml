@@ -33,7 +33,7 @@ env:
   DIY_P1_SH: SL-3000/diy-part1.sh
   DIY_P2_SH: SL-3000/diy-part2-padavanonly_immortalwrt-mt798x-24.10.sh
   UPLOAD_BIN_DIR: true
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
