@@ -107,14 +107,11 @@ jobs:
 
     - name: 加载自定义配置
       run: |
-        echo "WORKFLOW_NAME=MT-3000" | tr ' ' '_' >> $GITHUB_OUTPUT
-        cat $GITHUB_OUTPUT
-        [ -e files ] && mv ./files openwrt/files
-        [ -e $CONFIG_FILE_IMM ] && mv $CONFIG_FILE_IMM openwrt/.config
+        [ -e files ] && mv files openwrt/files
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        make defconfig
     - name: SSH 连接到 Actions
       uses: P3TERX/ssh2actions@v1.0.0
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh != 'false') || contains(github.event.action, 'ssh')
