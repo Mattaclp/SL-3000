@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 30 20 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 #  schedule:
 #    - cron: 0 16 * * *
 
@@ -30,7 +30,7 @@ env:
   ###############手动修改##############
   OPENWRT_NAME: immortal
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-24.10
-  REPO_BRANCH: 24.10
+  #REPO_BRANCH: 24.10
   FEEDS_CONF: SL-3000/padavanonly_immortalwrt-mt798x-24.10/feeds.conf.default
   CONFIG_FILE: SL-3000/RAX3000M_immortal2402.config
   DIY_P1_SH: SL-3000/diy-part1.sh
