@@ -29,7 +29,7 @@ env:
   REPO_URL_IMM: https://github.com/padavanonly/immortalwrt-mt798x-24.10.git
   REPO_BRANCH: 24.10
   FEEDS_CONF: SL-3000/padavanonly_immortalwrt-mt798x-24.10/feeds.conf.default
-  CONFIG_FILE: SL-3000/RAX3000M_immortal2402.config
+  CONFIG_FILE: SL-3000/CM520.config
   DIY_P1_SH: SL-3000/diy-part1.sh
   DIY_P2_SH: SL-3000/diy-part2-padavanonly_immortalwrt-mt798x-24.10.sh
   UPLOAD_BIN_DIR: true
