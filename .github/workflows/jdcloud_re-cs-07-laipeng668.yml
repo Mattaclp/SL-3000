@@ -27,8 +27,8 @@ on:
 env:
   ###############手动修改##############
   OPENWRT_NAME: laipeng668
-  REPO_URL: https://github.com/laipeng668/immortalwrt.git
-  REPO_BRANCH: openwrt-24.10
+  REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
+  REPO_BRANCH: kernel-6.12
   FEEDS_CONF: jdcloud_re-cs-07-laipeng668/feeds.conf.default
   CONFIG_FILE: SL-3000/jdcloud_re-cs-07-laipeng668.config
   DIY_P1_SH: SL-3000/diy-part1.sh
